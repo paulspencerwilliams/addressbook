@@ -1,4 +1,4 @@
-package uk.me.paulswilliams.addressbook;
+package uk.me.paulswilliams.addressbook.cukes;
 
 
 import cucumber.api.CucumberOptions;
