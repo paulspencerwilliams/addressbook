@@ -8,11 +8,11 @@ import cucumber.api.java.en.When;
 
 public class StepDefinitions {
 
+    private AddressBookRepository addressBookRepository = new AddressBookRepository();
+
     @Given("^no entries exist$")
     public void no_entries_exist() throws Throwable {
-        // Express the Regexp above with the code you wish you had
-        throw new PendingException();
-
+        addressBookRepository.recreate();
     }
     @When("^I create \"([^\"]*)\" with phone number (\\d+)$")
     public void I_create_with_phone_number(String name, int phoneNumber) throws Throwable {
